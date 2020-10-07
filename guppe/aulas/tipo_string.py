@@ -55,4 +55,4 @@ print(texto[::-1])
 nome = 'ana' # Palíndromo
 print(nome)
 
-print([::-1])
+print(nome[::-1])
