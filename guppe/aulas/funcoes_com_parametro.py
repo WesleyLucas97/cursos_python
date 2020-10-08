@@ -77,13 +77,48 @@ print()
 # print(soma(2, 3, 4)) # TypeError - Argumentos de mais
 # print(soma(2))  # TypeError - Argumentos de menos
 
-"""
 
 # Nomeando parametros
 
 def nome_completo(nome, sobrenome):
-    return f'Seu nome completo e {nome} {sobrenome}'
+    return f'Seu nome completo eh {nome} {sobrenome}'
 
 print(nome_completo('Wesley', 'Lucas'))
-print(nome_completo())
 
+# A difennca entra Parametros e Argumentos
+#   - Paramentros sao variaveis declaradas na definicao de uma funcao;
+#   - Argumentos sao dados passados durante a execucao de uma funcao;
+
+# A ordem dos paramentros importa!
+
+nome = 'Jon'
+sobrenome = 'Jones'
+
+print(nome_completo(nome, sobrenome))
+print(nome_completo(sobrenome, nome))
+
+# Argumentos nomeados (Keyword Arguments)
+
+# Caso utilizemos nomes dos paramentros nos argumentos para informa-los, podemos utilizar qualquer ordem.
+
+print(nome_completo(nome='Wesley', sobrenome='Lucas'))
+print(nome_completo(nome=nome, sobrenome=sobrenome))
+print(nome_completo(sobrenome='Grimes', nome='Rick'))
+"""
+
+# Erro comum na utilizacao do return
+# Colocar o return no final do if, e nao identado com o final da funcao
+
+
+def soma_impares(numeros):
+    total = 0
+    for num in numeros:
+        if num % 2 != 0:
+            total += num
+    return total
+
+vector = [1, 2, 3, 4, 5, 6, 7]
+print(soma_impares(vector))
+
+tupla = (1, 2, 3, 4, 5, 6, 7)
+print(soma_impares(tupla))
