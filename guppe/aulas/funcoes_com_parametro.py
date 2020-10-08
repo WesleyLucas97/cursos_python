@@ -26,3 +26,4 @@ print(quadrado_de_7())
 print(quadrado_de_7())
 print(quadrado_de_7())
 
+print('lindo de mae')
