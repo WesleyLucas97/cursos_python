@@ -26,6 +26,3 @@ print(quadrado_de_7())
 print(quadrado_de_7())
 print(quadrado_de_7())
 
-for x in range(20):
-    print(x)
-    
