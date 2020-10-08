@@ -18,12 +18,13 @@ Se a gente pensar em uma funcao, ja sabemos que temos funcoes que:
 
 # Refatorando uma funcao
 
-def quadrado_de_7():
-    return 7 * 7
+def quadrado(numero):
+    return numero * numero
 
-print(quadrado_de_7())
-print(quadrado_de_7())
-print(quadrado_de_7())
-print(quadrado_de_7())
+print(quadrado(7))
+print(quadrado(2))
+print(quadrado(5))
 
-print('lindo de mae')
+ret = quadrado(6)
+print(ret)
+
