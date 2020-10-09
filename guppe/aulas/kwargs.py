@@ -93,13 +93,13 @@ def soma_multiplos_numeros(a, b, c, **kwargs):
     print(a + b + c)
 
 
-soma_multiplos_numeros(1, 2, 3, )
+soma_multiplos_numeros(1, 2, 3)
 
 vector = [1, 2, 3]
-soma_multiplos_numeros(,
+soma_multiplos_numeros(*vector)
 
 dici = dict(a=1, b=2, c=3)
-soma_multiplos_numeros(,
+soma_multiplos_numeros(**dici)
 
 # OBS: Os nomes da chave em um dicionario devem ser o mesmo dos parametros da funcao
 
@@ -107,4 +107,4 @@ soma_multiplos_numeros(,
 # soma_multiplos_numeros(**dici)
 
 dici = dict(a=1, b=2, c=3, nome='geek')
-soma_multiplos_numeros(,
+soma_multiplos_numeros(**dici, lan='Python')
