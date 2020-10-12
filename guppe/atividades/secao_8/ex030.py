@@ -9,7 +9,7 @@ from random import randint
 import math
 
 
-def cosh(x):
+def coshyp(x):
     som = 0
     n1 = x * (math.pi / 180)
 
@@ -20,5 +20,5 @@ def cosh(x):
 
 
 a = randint(0, 361)
-print(cosh(a))
+print(coshyp(a))
 print(math.cosh(a * (math.pi / 180)))

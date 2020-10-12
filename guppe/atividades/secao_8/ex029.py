@@ -9,7 +9,7 @@ from random import randint
 import math
 
 
-def sinh(x, n):
+def sinhyp(x, n):
     som = 0
     n1 = x * (math.pi / 180)
 
@@ -21,5 +21,5 @@ def sinh(x, n):
 
 a = randint(0, 361)
 print(a)
-print(sinh(a, 10))
+print(sinhyp(a, 10))
 print(math.sinh(a * (math.pi / 180)))
