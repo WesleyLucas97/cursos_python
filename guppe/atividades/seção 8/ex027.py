@@ -6,16 +6,20 @@ angulo usando sua respectiva serie de Taylor:
 onde x e o valor do angulo em radianos. Considerar pi = 3.141593 e n variando de 0 ate 5.
 """
 from math import factorial, pi
+from random import randint
 
 
 def Taylor(x, n):
     som = 0
-    x = x * (pi / 180)
+    n1 = x * (pi / 180)
 
     for n in range(n):
-        som += ((((-1) ** n) / factorial((2 * n) + 1)) * (x ** ((2 * n) + 1)))
+        som += ((((-1) ** n) / factorial((2 * n) + 1)) * (n1 ** ((2 * n) + 1)))
     
-    return som
+    return f'O seno de {x} eh {som:.4f}'
 
 
-print(Taylor(0.5236, 4))
+a = randint(0, 360)
+b = randint(0, 100)
+print(a, b)
+print(Taylor(a, b))
