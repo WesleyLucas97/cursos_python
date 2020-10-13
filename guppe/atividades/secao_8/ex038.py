@@ -11,11 +11,10 @@ from random import randint
 def fat_expo(x):
     fat = 1
     for i in range(1, x + 1):
-        # print(i)
-        fat = i ** (fat)
-        # print(fat)
+        fat = i ** fat
 
-    return x ** fat, fat, x
+    fat = str(fat)
+    return fat, len(fat)
 
 
 print(fat_expo(5))
