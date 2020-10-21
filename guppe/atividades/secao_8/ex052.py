@@ -3,7 +3,6 @@ Escreva uma funcao que recebe uma matriz quadrada de ordem N e calcule a sua tra
 A entao aij = bji).
 """
 from random import randint
-from ex048 import diagonal
 
 
 def transposta(x: list):
