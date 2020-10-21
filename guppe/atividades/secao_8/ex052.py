@@ -6,7 +6,6 @@ from random import randint
 
 
 def transposta(x: list):
-    b1 = 0
     transpos = []
     for i in range(len(x)):
         transpos.append([])
