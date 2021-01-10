@@ -1,3 +1,15 @@
+def Division(x, y):
+    return x / y
+
+
+def Multiplication(x, y):
+    return x * y
+
+
+def Exponentiation(x, y):
+    return x ** y
+
+
 numbers = [1, 2, 3, 4, 5]
 new_numbers = [number for number in numbers]
 division = [number / 2 for number in numbers]
