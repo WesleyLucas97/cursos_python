@@ -63,3 +63,11 @@ cidades = [
 ]
 
 print(cidades)
+
+# f = 9/5 * c + 32
+
+# Lambda
+
+c_para_f = lambda dado: (dado[0], (9/5) * dado[1] + 32)
+
+print(list(map(c_para_f, cidades)))
